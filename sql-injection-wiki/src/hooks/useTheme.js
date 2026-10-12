@@ -30,7 +30,7 @@ export function useTheme() {
     document.documentElement.setAttribute('data-theme', theme)
     try {
       localStorage.setItem(STORAGE_KEY, theme)
-    } catch (_) {
+    } catch {
       // Si localStorage no está disponible, seguimos sin persistir.
     }
   }, [theme])

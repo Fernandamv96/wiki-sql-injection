@@ -79,7 +79,6 @@ export default function App() {
     } catch (err) {
       // Si falla, al menos avisamos en consola
       // (en producción esto se podría mostrar en una tostada)
-      // eslint-disable-next-line no-console
       console.error('Error exportando a PDF:', err)
       alert('Hubo un error al generar el PDF. Revisa la consola.')
     } finally {
